@@ -4,3 +4,55 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.theme-dark {
+  --background-color: #000000;
+  --accent-color: #00cc14;
+
+  --transparent-color: #00000000;
+
+  --label-text-color: #00cc14;
+  --text-stroke-color: #000000;
+  --text-hover-color: #00cc14;
+  --heart-contour-color: #00cc14;
+  --heart-sparks-color: #FF0000;
+
+  --bd-gradient: repeating-linear-gradient(#000, #d3d3d300 2px),
+  repeating-linear-gradient(to right, #000, #d3d3d300 2px),
+  linear-gradient(to bottom, #007f0c, #004306);
+
+  --font-weight-title: 785;
+  --font-weight-text: 465;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #000000;
+  --accent-color: #00cc14;
+
+  --transparent-color: #00000000;
+
+  --label-text-color: #00cc14;
+  --text-stroke-color: #000000;
+  --text-hover-color: #00cc14;
+  --heart-contour-color: #00cc14;
+  --heart-sparks-color: #FF0000;
+
+  --bd-gradient: repeating-linear-gradient(#000, #d3d3d300 2px),
+  repeating-linear-gradient(to right, #000, #d3d3d300 2px),
+  linear-gradient(to bottom, #007f0c, #004306);
+    }
+  }
+
+/* .theme-light {
+  
+    --bgc: #FFFFFF;
+    --accent-color: #000000;
+  
+    --main-font: "Inter-Variable";
+    --accent-font: "Press Start 2P";
+  
+    --font-weight-title: 700;
+    --font-weight-text: 400;
+  
+} */
