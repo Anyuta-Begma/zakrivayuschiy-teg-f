@@ -1,1 +1,1 @@
-git@github.com:Anyuta-Begma/zakrivayuschiy-teg-f.git
+https://github.com/Anyuta-Begma/zakrivayuschiy-teg-f.git
