@@ -32,43 +32,41 @@
   --font-size-s: 14px;
   --line-height-s: 14px;
   --line-height-m: 21px;
-  
-  --gap-s: 0.125rem; 
+
+  --gap-s: 0.125rem;
   --gap-m: 0.438rem;
   --gap-l: 0.75rem;
   --gap-xl: 1.25rem;
   --gap-xxl: 3.25rem;
-  
-  
-  
+
   --xxs: 1.25rem;
   --xs: 1.313rem;
   --s: 1.5rem;
-  --m: 1.563rem; 
-  --l: 1.75rem; 
+  --m: 1.563rem;
+  --l: 1.75rem;
   --xl: 2.438rem;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #ffffff;
-  --accent-color: #000000;
+    --accent-color: #000000;
 
-  --transparent-color: #00000000;
+    --transparent-color: #00000000;
 
-  --label-text-color: #000000;
-  --text-stroke-color: #ffffff;
-  --text-hover-color: #ffffff;
+    --label-text-color: #000000;
+    --text-stroke-color: #ffffff;
+    --text-hover-color: #ffffff;
 
-  --heart-contour-color: #000000;
-  --heart-sparks-color: #ff0000;
-  --hover-body-color: #000000;
-  --active-heart-color: #ff0000;
+    --heart-contour-color: #000000;
+    --heart-sparks-color: #ff0000;
+    --hover-body-color: #000000;
+    --active-heart-color: #ff0000;
 
-  --dialog-backdrop-color: #000000;
+    --dialog-backdrop-color: #000000;
 
-  --bd-gradient: repeating-linear-gradient(#d3d3d3, #d3d3d300 2px),
-    repeating-linear-gradient(to right, #d3d3d3, #d3d3d300 2px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --bd-gradient: repeating-linear-gradient(#d3d3d3, #d3d3d300 2px),
+      repeating-linear-gradient(to right, #d3d3d3, #d3d3d300 2px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 }
