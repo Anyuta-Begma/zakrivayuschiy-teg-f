@@ -22,7 +22,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--font-weight-text);
-  background-image: var(--bd-gradient);
+  background-image: var(--bg-gradient);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -92,8 +92,8 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  margin-inline-start: calc(-1 * var(--xxs));
-  margin-block-start: -0.063rem;
+  left: calc(-1 * var(--xxs));
+  top: calc(-1 * var(--xxxs));
   animation: moving 0.5s infinite alternate ease-in-out;
 }
 
@@ -149,7 +149,7 @@
 
 .card__list-item {
   background-color: var(--background-color);
-  border: 0.063rem solid var(--accent-color);
+  border: var(--xxxs) solid var(--accent-color);
 }
 
 .card__title {
@@ -179,8 +179,8 @@
 .card__image-label {
   position: absolute;
   z-index: 2;
-  inset-inline-end: var(--m);
-  inset-block-start: var(--m);
+  right: var(--m);
+  top: var(--m);
   font-family: var(--accent-font), fantasy;
   font-size: var(--font-size-s);
   line-height: var(--line-height-s);
@@ -196,35 +196,36 @@
   object-fit: cover;
 }
 
-.card__image-freetrack {
+.filter-brightness-sepia {
   filter: brightness(150%) sepia(80%);
 }
 
-.card__image-blank {
-  filter: saturate(158%);
+.filter-contrast-saturate {
+  filter: contrast(110%) saturate(130%);
 }
 
-.card__image-doubt {
-  filter: contrast(83%);
+.filter-brightness-grayscale-contrast {
+  filter: brightness(150%) grayscale(0.9) contrast(110%);
 }
+/* 
 
-.card__image-ideal {
+.card__image-workarounds { 
+
+ */
+
+.filter-hue-rotate {
   filter: hue-rotate(48deg);
 }
 
-.card__image-support {
-  filter: contrast(120%) saturate(130%);
+.filter-contrast {
+  filter: contrast(83%);
 }
 
-.card__image-workarounds {
-  filter: brightness(150%) grayscale(0.9) contrast(110%);
-}
-
-.card__image-frustration {
+.filter-drop-shadow {
   filter: drop-shadow(0px 0px 80px var(--accent-color));
 }
 
-.card__image-now {
+.filter-saturate-m {
   filter: saturate(158%);
 }
 
@@ -271,6 +272,16 @@
 
 .like-icon {
   display: block;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--hover-body-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+  fill: var(--hover-body-color);
+  transition: fill 0.3s linear;
 }
 
 .controls__button {
