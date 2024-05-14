@@ -23,8 +23,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  
+@media (prefers-reduced-motion: no-preference) {
   @keyframes like-icon-animation {
     from {
       transform: scale(1);
@@ -85,7 +84,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--active-heart-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .contour {

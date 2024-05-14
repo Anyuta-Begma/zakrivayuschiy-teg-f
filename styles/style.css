@@ -207,11 +207,6 @@
 .filter-brightness-grayscale-contrast {
   filter: brightness(150%) grayscale(0.9) contrast(110%);
 }
-/* 
-
-.card__image-workarounds { 
-
- */
 
 .filter-hue-rotate {
   filter: hue-rotate(48deg);
@@ -255,10 +250,11 @@
 }
 
 .card__icon-button {
-  outline: 0.125rem solid var(--transparent-color);
+  border: 0.125rem solid var(--transparent-color);
   padding-inline-start: 0;
   padding-inline-end: 0;
   cursor: pointer;
+  block-size: 38px;
 }
 
 .card__icon-button:focus {
@@ -266,7 +262,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 0.125rem solid var(--accent-color);
+  border: 0.125rem solid var(--accent-color);
   transition: border 0.3s ease;
 }
 
